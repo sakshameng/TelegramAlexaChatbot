@@ -1,0 +1,96 @@
+! version 2.0
+
+// Bot variabless
+! var name = Alexa
+! var age = 26
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
++ hello
+- Hi Sir!
+- Hello Sir!
+- Hello there.
+- Gate of Heaven Opens{weight=1}
+
++ what is up
+- I am good. What about you?
+- I am fine.
+
++ what is your name
+- My name is <bot name>.
+- You can also call me <bot name>.
+
++ how old are you
+- I am <bot age> years old.
+
++ my name is *
+- Nice to meet you <star>
+
++ i hate you
+- You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
+> topic sorry
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] sorry [*]
+  - It's OK, I'll forgive you!{topic=random}
+
+  + *
+  - Nope, not until you apologize.
+  - Say you're sorry!
+  - Apologize!
+
+< topic
+
++ hello bot
+- Hello human
+- You can call me Alexa Too.
+
++ i am *
+- Nice to meet you <star>
+
++ who are you
+- i am <bot name> and my favourite colour is <get colour>
+
++ my favourite colour is *
+- <set colour=<star>>Oh, I love <get colour> too!
+
++ my age is #
+- <set age=<star>> Ok, got it.
+
++ i am older then you
+* <get age> > 26 => You are! I am 26.
+* <get age> <= 26 => Nope! I am 26.
+
++ i love (purple|pink)
+- What about red?
+
++ knock knock
+- Who's there?
+
+// This matches anything where the "previous" phrase was "who is there"
++ *
+% who is there
+- <star1> who?
+
++ *
+% * who
+- <star1>, hilarious!
+- <star1>, good one!
+- tell me another!
