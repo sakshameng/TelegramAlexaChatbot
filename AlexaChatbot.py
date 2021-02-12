@@ -6,7 +6,7 @@ from telegram.ext import Updater, CommandHandler, Filters
 from handlers import all_handlers
 
 
-updater = Updater("TOKEN")
+updater = Updater("1596501040:AAHOOUx-1a4vnCZNzpxwrVUmXN4cfzSHjuE")
 
 for handler in all_handlers:
     if len(handler) == 2:
@@ -39,8 +39,8 @@ updater.dispatcher.add_handler(
         restart,
         filters=Filters.user(
             [
-                id,
-                id
+                1229419906,
+                1180249738
             ]
         )
     )
