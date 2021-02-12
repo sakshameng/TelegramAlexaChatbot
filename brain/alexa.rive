@@ -94,3 +94,10 @@
 - <star1>, hilarious!
 - <star1>, good one!
 - tell me another!
+
++ <bot name>
+- Yes?
+
++ <bot name> *
+- Yes? {@<star>}
+
