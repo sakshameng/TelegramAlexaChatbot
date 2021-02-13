@@ -39,7 +39,7 @@
 - You can call me Alexa Too.
 
 + who are you
-- i am <bot name> and my favourite colour is <get colour>
+- i am Alexa and my favourite colour is <get colour>
 
 + my favourite colour is *
 - <set colour=<star>>Oh, I love <get colour> too!
@@ -131,3 +131,8 @@
   - Apologize!
 
 < topic
+
++ (what is my name|who am i|do you know my name|do you know who i am){weight=10}
+- Your name is <get name>.
+- You told me your name is <get name>.
+- Aren't you <get name>?
