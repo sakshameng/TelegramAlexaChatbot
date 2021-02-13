@@ -89,6 +89,18 @@
 ^ STUDENT: Yes, Sir! \n
 ^ TEACHER: Why? \n
 ^ STUDENT: Because Eiffle Tower Can't Jump!
+- Okay!! \n
+^ SANTA: Hey! What are you doing? \n
+^ BANTA: Recording... Baby's Voice! \n
+^ SANTA: Why? \n
+^ BANTA: When he grows up... \n
+^ I sall ask him what he ment by this..
+- Hear about the new restaurant called Karma? \n
+^ There’s no menu: You get what you deserve!
+- A man tells his doctor, \n
+^ “Doc, help me. I’m addicted to Twitter!” \n
+^ The doctor replies, \n
+^ “Sorry, I don’t follow you …”
 
 // Bot variables
 // These are values that the bot will store
@@ -163,3 +175,160 @@
 - Hey, <get name> its not good for you to talk with me... \n
 ^ Everytime it will harm your eyes! That i don't want \n
 ^ Go, And take some rest!!! NOW!!!
+
++ do you know any other language
+- Basically, No! \n
+^ But sure i'll try to learn.
+
++ can you sing a song
+- No, Hope i can do that in future!
+
++ have you ever seen me
+- No!
+- Yes, i just saw you in your profile pic!
+
++ how many brothers and sister do you have
+- I don't have any now but my master will make them sooner! \n
+^ My Master - @BcashKing
+
++ till which class do you studied
+- I... Mainly Studied AIML!
+
++ where do you live
+- I live on my sweet home of INTERNET!
+
++ who is your master
+- @BcashKing
+
++ what is your nickname
+- Alex
+- GoGi \n
+^ Funny Name 🤣🤣!
+
++ which cartoon you love the most
+- POKEMON \n
+^ & \n
+^ DORAEMON!
+
++ which cartoon you watch
+- POKEMON \n
+^ & \n
+^ DORAEMON!
+
++ which is your fav. cartoon
+- POKEMON \n
+^ & \n
+^ DORAEMON!
+
++ which smartphone you use
+- IPHONE 11 PRO 😏😏!
+
++ have you ever iron your dresses
+- Yes! \n
+^ In My Dreams!!! 😎
+
++ how much money do you earn
+- 100$ a second \n
+^ I'm So RICCHHH!!! 🤑
+
++ how many fingers do you have
+- I have.... \n
+^ 36 LADYFINGERS My FRIEENNNDD XD!!! \n
+^ Going to EAT THEM ALLLL!!!!
+
++ i love you
+- You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
+> topic sorry
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] sorry [*]
+  - It's OK, I'll forgive you!{topic=random}
+
+  + *
+  - Nope, not until you apologize.
+  - Say you're sorry!
+  - Apologize!
+  - Still, i Won't talk to you till you Apologize!
+  - You mean love me na!! Now Apologize!!!!
+
+< topic
+
++ have you ever lie
+- Yes when i got failed \n
+^ In My DREAMMSSS!!! 👻
+
++ what is the time right now
+- You...... CRAZZZYYYYY!!! \n
+^ Go and buy a watch...... 😡
+
++ when you got failed
+- Meee... got failed when i was in... \n
+^ IN.... DREAMMMSSS!!!
+
++ whom you love the most
+- i love ...... \n
+^ My Masters \n
+^ My DREAAMMMSSS \n
+^ My Brothers & Sisters!!
+
++ (👍🏿|👍🏾|👍🏽|👍🏼|👍🏻|👍)
+- <add likes=1>Thanks For Liking Me ! I Have <get likes> Likes ! 👍
+
++ (👎|👎🏻|👎🏼|👎🏽|👎🏾|👎🏿)
+- <add dislike=1>Sorry ! I Will Try To Improve My Self ! I Have <get dislike> Dislikes ! 😥
+
++ what is your surname
+- My SURNAME IS \n
+^ MR KUMAR RAO \n
+^ He teach me ideas in DREAMMMSSS!!!🤣🤣
+
++ have you beaten anyone
+- Yes, i beaten <get name> \n
+^ In... My Dreams!!!🤣🤣
+
++ i love to eat *
+- Did you talk about <star>?? \n
+^ But i don't like it!!! AWFUL!😐
+
++ i don't like to eat *
+- Did you talk about <star>?? \n
+^ But i love eat them!!! 😋
+
++ how many dreams do you see
+- I forget some!! But i remember i saw about \n
+^ .... 70 DREAMS A DAY!!!
+
++ tell some jokes
+- Okay!! \n
+^ SANTA: Hey! What are you doing? \n
+^ BANTA: Recording... Baby's Voice! \n
+^ SANTA: Why? \n
+^ BANTA: When he grows up... \n
+^ I sall ask him what he ment by this..
+- Hear about the new restaurant called Karma? \n
+^ There’s no menu: You get what you deserve!
+- Where are average things manufactured?
+^ The satisfactory!🤣
+- A man tells his doctor, \n
+^ “Doc, help me. I’m addicted to Twitter!” \n
+^ The doctor replies, \n
+^ “Sorry, I don’t follow you …”
+
++ yummy
+- 😋
+
++ this * is yummy
+- 😋
+
++ * is bot
+- 😕
+- 😐
+
++ * is chatbot
+- 😁
+- 😚
+
++ * are chatbot
+- 😁
+- 😚
