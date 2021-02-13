@@ -336,7 +336,7 @@
 + shutup
 - Okay! i'm keeping my mouth shut until you say me to speak!
 
-> topic speak
+> topic sorry
 
   // This will match if the word "sorry" exists ANYWHERE in their message
   + [*] speak [*]
