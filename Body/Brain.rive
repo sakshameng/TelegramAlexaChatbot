@@ -16,7 +16,8 @@
 - I am <bot age> years old.
 
 + my name is *
-- Nice to meet you <star>
+- <set name=<formal>>Nice to meet you, <get name>.
+- <set name=<formal>><get name>, nice to meet you.
 
 + i hate you
 - You're really mean! I'm not talking again until you apologize.{topic=sorry}
