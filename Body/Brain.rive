@@ -9,8 +9,8 @@
 - I am fine.
 
 + what is your name
-- My name is <bot name>.
-- You can also call me <bot name>.
+- My name is Alexa.
+- You can also call me Alexa.
 
 + how old are you
 - I am <bot age> years old.
@@ -115,3 +115,19 @@
 ! sub what've = what have
 ! sub what'll = what will
 ! sub who's   = who is
+
++ what the fuck
+- You're really mean! I'm not talking again until you apologize.{topic=sorry}
+
+> topic sorry
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] sorry [*]
+  - It's OK, I'll forgive you!{topic=random}
+
+  + *
+  - Nope, not until you apologize.
+  - Say you're sorry!
+  - Apologize!
+
+< topic
