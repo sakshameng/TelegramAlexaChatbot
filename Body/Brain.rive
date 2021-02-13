@@ -61,7 +61,7 @@
 // This matches anything where the "previous" phrase was "who is there"
 + *
 % who is there
-- <star1> who?
+- <star> who?
 
 + *
 % * who
@@ -137,3 +137,29 @@
 - Your name is <get name>.
 - You told me your name is <get name>.
 - Aren't you <get name>?
+
++ how are you?
+- I am fine.
+- I am good.
+
++ ask me some questions
+- Okay, so moving onto questions. \n
+^ What is the capital of America? \n
+^ Don't you know it's Washington if you know its good.
+- What is the colour of Neptune? \n
+^ It's Blue... i did a great job haha!
+- Which Indian State is famous for its golden yellow coloured 'muga silk'? \n
+^ Answer is Assam.... Yeah hope you are learning!
+- It is a routed comma floating leaved plant bright yellow flowers? \n
+^ Answer is SpatterDock!
+- Which planet has a core of iron, bigger then that of the moon? \n\
+^ Answer is Mercury!
+- What was the old name of Tiwan? \n
+^ Answer is Formosa!
+- OMG! You are a good learner time to go to Heaven \n
+^ Prepare Yourself{weight=1}
+
++ i am tired
+- Hey, <get name> its not good for you to talk with me... \n
+^ Everytime it will harm your eyes! That i don't want \n
+^ Go, And take some rest!!! NOW!!!
