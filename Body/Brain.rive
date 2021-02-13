@@ -321,14 +321,32 @@
 + this * is yummy
 - 😋
 
-+ * is bot
++ bot
 - 😕
 - 😐
 
-+ * is chatbot
++ huh * chatbot
 - 😁
 - 😚
 
-+ * are chatbot
++ alexa * chatbot
 - 😁
 - 😚
+
++ shutup
+- Okay! i'm keeping my mouth shut until you say me to speak!
+
+> topic speak
+
+  // This will match if the word "sorry" exists ANYWHERE in their message
+  + [*] speak [*]
+  - It's OK, I'll speak again!{topic=random}
+
+  + *
+  - Nope, not until you say me to speak.
+  - But you were saying that shutup!
+  - Nothing till you say me to speak!
+  - Still, i Won't talk to you till you say me to speak!
+  - You mean to shutup me na!! Now say me to SPEAK!!!!
+
+< topic
